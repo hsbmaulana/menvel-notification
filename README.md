@@ -13,17 +13,13 @@ $ composer require hsbmaulana/menvel-notification
 
 How to use it :
 
-- Publish files.
+- Put `Menvel\Notification\NotificationServiceProvider` to service provider configuration list.
 
-```
-$ php artisan vendor:publish --provider="Menvel\Notification\NotificationServiceProvider"
-```
+- Migrate.
 
 ```
 $ php artisan migrate
 ```
-
-- Put `Menvel\Notification\NotificationServiceProvider` to service provider configuration list.
 
 Author
 ---

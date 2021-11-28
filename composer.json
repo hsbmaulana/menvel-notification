@@ -1,6 +1,6 @@
 {
     "name": "hsbmaulana/menvel-notification",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Lumen-Laravel (Notification)",
 
     "authors": [{ "name": "Hasby Maulana", "email": "hsbmaulana.iso@gmail.com" }],

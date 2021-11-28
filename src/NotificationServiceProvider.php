@@ -22,10 +22,7 @@ class NotificationServiceProvider extends ServiceProvider
     {
         parent::boot();
 
-        if ($this->app->runningInConsole()) {
-
-            $this->publishes([ __DIR__ . '/../database/migrations' => database_path('migrations'), ], 'menvel-notification-migrations');
-        }
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
 
         Event::listen(function (\Illuminate\Notifications\Events\NotificationSent $notif) {
 
