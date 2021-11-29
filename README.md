@@ -21,6 +21,20 @@ How to use it :
 $ php artisan migrate
 ```
 
+- Sample usage.
+
+```php
+use Menvel\Notification\Contracts\Repository\INotificationRepository;
+
+$repository = app(INotificationRepository::class);
+// $repository->setUser(...); //
+// $repository->getUser(); //
+
+// $repository->markAsRead(...); //
+// $repository->clear('...'); //
+// $repository->all(); //
+```
+
 Author
 ---
 
